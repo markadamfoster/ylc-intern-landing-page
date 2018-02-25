@@ -14,7 +14,7 @@ body {
   body {
     font-size: 16px;
   }
-} 
+}
 
 header {
   margin: 10px 0;
@@ -30,7 +30,6 @@ a {
   text-decoration: none;
 }
 
-
 p {
   line-height: 1.5;
 }
@@ -41,12 +40,13 @@ ol {
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   line-height: 1.5;
 }
 
-button:focus {outline:0;}
-
+button:focus {
+  outline: 0;
+}
 
 .logo {
   display: block;
@@ -80,7 +80,7 @@ section.hero div.hero-image {
     clip-path: none;
     height: 204px;
   }
-} 
+}
 
 .hero-dark-callout {
   position: absolute;
@@ -94,21 +94,21 @@ section.hero div.hero-image {
   font-size: 22px;
   text-align: center;
   line-height: 1.5;
-  background: rgba(0, 29, 30, 0.96);
+  background: rgba(0, 29, 30, 0.9);
   box-shadow: 0 2px 19px 10px rgba(0, 0, 0, 0.13);
   border-radius: 6px;
 }
 
 @media (max-width: 600px) {
   .hero-dark-callout {
-    width: 100%;  
+    width: 100%;
     max-width: 100%;
     left: 0;
     position: relative;
     border-radius: 0;
     font-size: 18px;
   }
-} 
+}
 
 .circle-icon {
   margin: 0 auto;
@@ -127,7 +127,7 @@ section.hero div.hero-image {
 }
 
 .intro-text {
-  width: 500px;
+  width: 540px;
   max-width: 90%;
   margin: 0 auto;
   padding: 40px 0;
@@ -137,7 +137,7 @@ section.hero div.hero-image {
   .intro-text {
     padding: 20px 0;
   }
-} 
+}
 
 .intro-text p {
   margin: 20px auto;
@@ -149,8 +149,14 @@ section.white-bg {
   max-width: 90%;
 }
 
+@media (max-width: 600px) {
+  section.white-bg {
+    margin: 30px auto;
+  }
+}
+
 .apply-button {
-  background-color: #FF831D;
+  background-color: #ff831d;
   display: inline-block;
   border: none;
   margin: 30px auto;
@@ -161,11 +167,11 @@ section.white-bg {
   border-radius: 50px;
   text-decoration: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 250ms;
+  transition: background-color 250ms;
 }
 
 .apply-button:hover {
-  transform: scale(1.03);
+  background-color: #e97a20;
 }
 
 .apply-button-wrapper {

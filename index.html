@@ -5,22 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Young Life College | The Intern Experience</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/vnd.microsoft.icon">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
   <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="/css/styles.css" type="text/css">
+
 </head>
 
 <body>
   <header>
-    <img class="logo" src='/img/young-life-college-logo.png' alt='logo' />
+    <img class="logo" src='/img/young-life-college-logo.svg' alt='logo' />
   </header>
   <section class="hero">
     <div class="grad-background">
       <div class="hero-callout-wrapper">
         <div class="hero-image"></div>
-        <div class="hero-dark-callout">
+        <div class="hero-dark-callout wow animated fadeInUp">
           <div class="circle-icon">
+            <!-- Compass Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#0DA8AC" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass">
               <circle cx="12" cy="12" r="10"></circle>
@@ -51,8 +54,9 @@
     </div>
   </section>
 
-  <section class="white-bg">
+  <section class="white-bg wow animated fadeInUp">
     <div class="circle-icon">
+      <!-- Info Icon -->
       <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#0DA8AC" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
         <circle cx="12" cy="12" r="10"></circle>
@@ -68,15 +72,15 @@
     </p>
   </section>
 
-  <section class="white-bg">
+  <section class="white-bg wow animated fadeInUp">
     <div class="circle-icon">
+      <!-- User Check Icon -->
       <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#0DA8AC" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-check">
         <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
         <circle cx="8.5" cy="7" r="4"></circle>
         <polyline points="17 11 19 13 23 9"></polyline>
       </svg>
-
     </div>
     <h3>Qualifications</h3>
     <ol>
@@ -99,7 +103,7 @@
   <section class="white-bg">
     <div class="apply-button-wrapper">
       <a href="#">
-        <div class="apply-button">Apply Now</div>
+        <div class="apply-button wow animated bounceIn">Apply Now</div>
       </a>
     </div>
   </section>
@@ -109,6 +113,10 @@
     <a href="mailto:sajafoster@gmail.com">sajafoster@gmail.com</a>
   </footer>
 
+  <script src="/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
