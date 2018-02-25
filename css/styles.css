@@ -1,0 +1,186 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  color: #283842;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+} 
+
+header {
+  margin: 10px 0;
+}
+
+h3 {
+  color: #283842;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+p {
+  line-height: 1.5;
+}
+
+ol {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+button:focus {outline:0;}
+
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  max-width: 90%;
+}
+
+.grad-background {
+  background-image: linear-gradient(-135deg, #17c6ca 0%, #148bb4 100%);
+  color: white;
+}
+
+.hero-callout-wrapper {
+  position: relative;
+}
+
+section.hero div.hero-image {
+  display: flex;
+  align-items: center;
+  background-image: url('/img/young-life-college-bus.jpg');
+  background-position: top center;
+  background-size: cover;
+  padding: 50px;
+  height: 600px;
+  clip-path: polygon(100% 100%, 0 84%, 0 0, 100% 0);
+}
+
+@media (max-width: 600px) {
+  section.hero div.hero-image {
+    clip-path: none;
+    height: 204px;
+  }
+} 
+
+.hero-dark-callout {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 270px);
+  padding: 60px 30px 30px;
+  width: 540px;
+  max-width: 90%;
+  margin: 0 auto;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  line-height: 1.5;
+  background: rgba(0, 29, 30, 0.96);
+  box-shadow: 0 2px 19px 10px rgba(0, 0, 0, 0.13);
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .hero-dark-callout {
+    width: 100%;  
+    max-width: 100%;
+    left: 0;
+    position: relative;
+    border-radius: 0;
+    font-size: 18px;
+  }
+} 
+
+.circle-icon {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background-color: #17c6ca;
+}
+
+.hero-dark-callout .circle-icon {
+  margin-top: -110px;
+  margin-bottom: 16px;
+}
+
+.intro-text {
+  width: 500px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+@media (max-width: 600px) {
+  .intro-text {
+    padding: 20px 0;
+  }
+} 
+
+.intro-text p {
+  margin: 20px auto;
+}
+
+section.white-bg {
+  margin: 50px auto;
+  width: 540px;
+  max-width: 90%;
+}
+
+.apply-button {
+  background-color: #FF831D;
+  display: inline-block;
+  border: none;
+  margin: 30px auto;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 30px 80px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms;
+}
+
+.apply-button:hover {
+  transform: scale(1.03);
+}
+
+.apply-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
