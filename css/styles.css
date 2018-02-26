@@ -173,6 +173,39 @@ section.columns {
   width: 40%;
 }
 
+.sites {
+  width: 600px;
+  height: 460px;
+  background-image: linear-gradient(
+      rgba(54, 69, 70, 0.6),
+      rgba(35, 191, 205, 0.6)
+    ),
+    url('/img/young-life-college-movein.jpg');
+  background-size: cover;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 1px #393939;
+  border-radius: 22px;
+}
+
+.sites-title {
+  text-align: center;
+  padding: 40px 0 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.sites-lists {
+  display: flex;
+  align-items: center;
+}
+
+.sites-lists ul li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
 @media (max-width: 800px) {
   section.columns {
     flex-direction: column;
