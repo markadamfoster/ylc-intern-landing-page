@@ -16,12 +16,7 @@ body {
   }
 }
 
-header {
-  margin: 10px 0;
-}
-
 h3 {
-  color: #283842;
   text-align: center;
   text-transform: uppercase;
 }
@@ -48,11 +43,72 @@ button:focus {
   outline: 0;
 }
 
+/**********************************************************
+  Header/Nav
+***********************************************************/
+
+header {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   display: block;
-  margin: 0 auto;
-  width: 300px;
+  /* margin: 0 auto; */
+  width: 220px;
   max-width: 90%;
+}
+
+.logo-w-tag {
+  display: none;
+  width: 280px;
+}
+
+.title {
+  width: 440px;
+}
+
+@media (max-width: 860px) {
+  .logo,
+  .title {
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+  .logo-w-tag {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-w-tag {
+    width: 230px;
+  }
+}
+
+.top-apply-button {
+  background-color: #ff831d;
+  border: none;
+  margin: 10px auto;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 250ms;
+}
+
+.apply-button:hover {
+  background-color: #e97a20;
 }
 
 .grad-background {
@@ -173,9 +229,14 @@ section.columns {
   width: 40%;
 }
 
+/**********************************************************
+    Sites
+***********************************************************/
+
 .sites {
   width: 600px;
   height: 460px;
+  max-width: 100%;
   background-image: linear-gradient(
       rgba(54, 69, 70, 0.6),
       rgba(35, 191, 205, 0.6)
@@ -184,8 +245,9 @@ section.columns {
   background-size: cover;
   margin: 0 auto;
   color: white;
-  text-shadow: 1px 1px #393939;
+  text-shadow: 1px 1px #3939398f;
   border-radius: 22px;
+  padding: 10px;
 }
 
 .sites-title {
@@ -199,6 +261,12 @@ section.columns {
 .sites-lists {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+.sites-lists ul {
+  margin: 0;
+  padding: 0;
 }
 
 .sites-lists ul li {
@@ -216,6 +284,35 @@ section.columns {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 620px) {
+  .sites {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .sites-lists ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .sites {
+    background-image: linear-gradient(-135deg, #17c6ca 0%, #148bb4 100%);
+    height: auto;
+  }
+
+  .sites-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+}
+
+/**********************************************************
+    Apply Now
+***********************************************************/
 
 .apply-button {
   background-color: #ff831d;
@@ -240,6 +337,10 @@ section.columns {
   display: flex;
   justify-content: center;
 }
+
+/**********************************************************
+    Footer
+***********************************************************/
 
 footer {
   height: 100px;
