@@ -129,11 +129,11 @@ section.hero {
 section.hero div.hero-image {
   display: flex;
   align-items: center;
-  background-image: url('/img/young-life-college-bus.jpg');
-  background-position: top center;
+  background-image: url('/img/young-life-college-hero.jpg');
+  background-position: center center;
   background-size: cover;
   padding: 50px;
-  height: 600px;
+  height: 640px;
   clip-path: polygon(100% 100%, 0 84%, 0 0, 100% 0);
 }
 
@@ -146,7 +146,7 @@ section.hero div.hero-image {
 
 .hero-dark-callout {
   position: absolute;
-  bottom: 0px;
+  bottom: -50px;
   left: calc(50% - 270px);
   padding: 60px 30px 30px;
   width: 540px;
@@ -165,6 +165,7 @@ section.hero div.hero-image {
   .hero-dark-callout {
     width: 100%;
     max-width: 100%;
+    bottom: 0;
     left: 0;
     position: relative;
     border-radius: 0;
@@ -192,7 +193,7 @@ section.hero div.hero-image {
   width: 540px;
   max-width: 90%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 60px 0 40px;
   font-size: 18px;
 }
 
