@@ -129,31 +129,45 @@ section.hero {
 section.hero div.hero-image {
   display: flex;
   align-items: center;
-  background-image: url('/img/young-life-college-hero.jpg');
+  background-image: url('/img/hero-banner.jpg');
   background-position: center center;
   background-size: cover;
   padding: 50px;
-  height: 640px;
+  height: 580px;
   clip-path: polygon(100% 100%, 0 84%, 0 0, 100% 0);
+}
+
+@media (max-width: 860px) {
+  section.hero div.hero-image {
+    clip-path: none;
+    height: 400px;
+  }
 }
 
 @media (max-width: 600px) {
   section.hero div.hero-image {
     clip-path: none;
-    height: 204px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  section.hero div.hero-image {
+    clip-path: none;
+    height: 220px;
   }
 }
 
 .hero-dark-callout {
   position: absolute;
   bottom: -50px;
-  left: calc(50% - 270px);
+  left: calc(50% - 280px);
   padding: 60px 30px 30px;
-  width: 540px;
+  width: 560px;
   max-width: 90%;
   margin: 0 auto;
   color: white;
-  font-size: 22px;
+  font-size: 26px;
   text-align: center;
   line-height: 1.5;
   background: rgba(0, 29, 30, 0.9);
